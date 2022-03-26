@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/IlanVer/ilanVer.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Ver</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/IlkSayfa/ilkSayfa.html" class="nav-logo">Al-Sat.com</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/AnaSayfa/anaSayfa.html" class="nav-link ">AnaSayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/SatılıkAraclar/satılıkAraba.html" class="nav-link">Satılık Araba</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/IlanVer/ilanVer.html" class="nav-link active">İlan Ver</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Ilanlarım/ilanlarım.html" class="nav-link">İlanlarım</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a id='profil' href="/Profil/profil.html" class="nav-link ">Profilim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="form" class="forms">
+            <div class="row">
+                <h1>İlan Ver</h1>
+                
+                <div class="col-sm-12">
+                    <label >Araba Markası</label>
+                    <input id="marka" type="text" placeholder="Marka Adı">
+                </div>
+                <div class="col-sm-12">
+                    <label >Vites</label>
+                    <select class="pet-select" id="vites">
+                        <option value="Tipi">Lütfen Şanzıman Tipini Seçin</option>
+                        <option value="Otomatik">Otomatik</option>
+                        <option value="Manuel">Manuel</option>
+                        <option value="Yarı Otomaik">Yarı Otomatik</option>
+                    
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label >Araba KM</label>
+                    <input id="km" type="number" placeholder="KM">
+                </div>
+                <div class="col-sm-12">
+                    <label >Araç Tipi</label>
+                    <select class="pet-select" id="type">
+                        <option value="Tipi">Lütfen Araç Tipini Seçin</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Pickup">Pickup</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Wagon">Wagon</option>
+                        <option value="Coupe">Coupe</option>
+                        <option value="Cabrio">Cabrio</option>
+                        <option value="Jeep">Jeep</option>
+                        
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label >Araç Yılı</label>
+                    <select class="pet-select" id="yil">
+                        <option value="Yılı">Lütfen Araç Yılını Seçin</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="2000 öncesi">2000 öncesi</option>
+                        
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label>Yakıt Türü</label>
+                    <select class="pet-select" id="yakit">
+                        <option value="Yakıt">Lütfen Yakıt Türü Seçin</option>
+                        <option value="Dizel">Dizel</option>
+                        <option value="Benzin">Benzin</option>
+                        <option value="LPG">LPG </option>
+                        <option value="Elektrikli">Elektrik (hibrit)</option>
+                       
+                        
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label>Fiyat</label>
+                    <input type="text" name="text" id="fiyat" placeholder="Araba Fiyat">
+
+                </div>
+                <div class="col-sm-12">
+                    <label>Kullancı Adı</label>
+                    <input type="text" name="text" id="username" placeholder="Kullancı Adı" readonly="yes">
+
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn  btn-lg">Satılık</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/IlanVer/ilanVer.js"></script>
+</html>

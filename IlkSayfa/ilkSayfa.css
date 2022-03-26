@@ -1,0 +1,85 @@
+
+ body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: #67b4c7;
+
+
+}
+.container{
+ 
+    margin-top: 30vh;
+   
+    border-radius: 2.5vh;
+   
+    align-items: center;
+
+}
+.row{
+  border: 2px solid rgb(255, 255, 255);
+  background :linear-gradient(rgb(243, 221, 221),rgb(49, 175, 197));
+  opacity:1;
+  border-radius: 2.5vh;
+  align-items: center;
+  padding: 5vh;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(231, 231, 231, 0.19);
+}
+
+.kayıt{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+ margin-top: 2vh;
+ align-items: center;
+}
+.giris{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.buton1 input{
+  border:none;
+  border-radius: 1vh;
+  padding: 1vh;
+  border:1px solid black;
+  cursor: pointer;
+  background: linear-gradient(#f01a1a, #5864f0);
+  margin-top: 1vh;
+  color: white;
+ 
+
+}
+.buton2 input{
+  border:none;
+  border-radius: 1vh;
+  padding: 1vh;
+  border:1px solid black;
+  cursor: pointer;
+  background: linear-gradient(#a5c748, #5964e0);
+   margin-top: 1vh;
+   color: white;
+
+}
+.buton1 input:hover{
+  border: 1px solid white;
+  background: linear-gradient(#e90505, #0618d6);
+  color: white;
+
+}
+.buton2 input:hover{
+  border: 1px solid white;
+background: linear-gradient(#a0d117, #1f2fda);
+  color: white;
+ 
+}
+.yazim{
+  text-align: center;
+  margin-bottom: 2.5vh;
+}
+h6{
+  margin-top: .6vh;
+}

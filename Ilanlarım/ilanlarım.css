@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background:linear-gradient(rgb(190, 0, 0), rgb(27, 23, 23));
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    color : black
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.nav-link:hover{
+    color: #f8f8f8;
+    border-bottom: 2px solid #00d6c4;
+}
+a.active{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    border-bottom: 2px solid #00d6c4;
+}
+a.active:hover{
+    color: #ffffff;
+    border-bottom: 2px solid#00d6c4;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #f0f0f0;
+}
+.nav-logo:hover{
+    color:#00d6c4 ;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        background:linear-gradient(rgb(190, 0, 0), rgb(27, 23, 23));
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+ .card-notify-badge {
+        position: absolute;
+        left: -10px;
+        top: -20px;
+        background: #06b5d4;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px; 
+        color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        font-size: 14px;
+
+    }
+
+ .card-notify-year {
+        position: absolute;
+        right: -10px;
+        top: -20px;
+        background: #a10303;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;      
+        font-size: 14px;      
+        width: 50px;
+        height: 50px;    
+        padding: 15px 0 0 0;
+}
+
+
+ .card-detail-badge {      
+        background: #06b5d4;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        font-size: 14px;   
+        margin-left: 1.5vh;
+        margin-top: 1vh;     
+    }
+
+   
+
+ .card:hover {
+            background: #fff;
+            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+.card-image-overlay {
+        font-size: 20px;
+        
+    }
+
+
+.card-image-overlay span {
+            display: inline-block;              
+        }
+
+
+.ad-btn {
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        border-radius: 80px;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        border: 3px solid #06b5d4;
+        display: block;
+        text-decoration: none;
+        margin: 20px auto 1px auto;
+        color: rgb(255, 255, 255);
+        overflow: hidden;        
+        position: relative;
+        background-color: #06b5d4;
+    }
+
+
+.ad-title h5 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+   
+   
+   .col-md-4{
+       margin-top: 3vh;
+       align-items: center;
+   }
+   .row{
+       margin-top:5vh;
+       
+   }
+body{
+    background-color:rgb(117, 3, 3);
+}
+a.ad-btn:hover{
+    background-color: #0a7b8f;
+    border: 3px solid #0a7b8f;
+}

@@ -1,0 +1,106 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: hsla(212, 100%, 65%, 0.3);
+   
+}
+.container{
+padding: 5vh;
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+#form{
+    background: linear-gradient(#f01a1a, #5864f0);
+    padding: 10vh;
+    color: white;
+    border-radius: 10px;
+}
+.baslik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    margin-top: .5vh;
+}
+div.checkbox{
+    display: flex;
+    align-items: center;
+}
+label{
+    margin-left:.5vh ;
+    font-size: 1.6vh;
+}
+.user input{
+  margin-bottom: 1.5vh;
+    outline:none;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding:1vh;
+  
+    margin-bottom: 1.8vh;
+  
+}
+
+.usersifre input{
+    margin-bottom: 1.5vh;
+      outline:none;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      padding:1vh;
+      
+    
+  }
+.buton button{
+    outline: none;
+    background: #006eff;
+    color: white;
+   border: 1px solid #1d61b9;
+   border-radius:1vh;
+    cursor: pointer;
+    padding: 1.1vh;
+   
+}
+.buton{
+    margin-top: .7vh;
+    display: flex;
+    justify-content:center;
+    align-items: end;
+    font-size:1.8vh;
+    
+}
+button:hover{
+    background: #0059cc;
+    color: white;
+   border: 1px solid #0d55b4;
+   
+
+}
+.kayıt{
+
+    text-decoration: none;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2vh;
+    }
+h6{
+    margin-top: 1.8vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+}
+#yazi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    padding: 1.5vh;
+    font-size: 3vh;
+    border: none;
+    border-radius: 3vh;
+ 
+}

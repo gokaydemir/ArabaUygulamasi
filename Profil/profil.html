@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Profil/profil.css">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ekranı</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/IlkSayfa/ilkSayfa.html" class="nav-logo">Al-Sat.com</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/AnaSayfa/anaSayfa.html" class="nav-link ">AnaSayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/SatılıkAraclar/satılıkAraba.html" class="nav-link">Satılık Araba</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/IlanVer/ilanVer.html" class="nav-link">İlan Ver</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Ilanlarım/ilanlarım.html" class="nav-link">İlanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a id='profil' href="/Profil/profil.html" class="nav-link active">Profilim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form id="form" class="forms">
+            <div class="row">
+                <h1>Profilim</h1>
+                <div class="col-sm-12">
+                    <label  for="ad">Ad</label>
+                    <input id="ad" type="text" placeholder="Ad" readonly="yes">
+                </div>
+                <div class="col-sm-12">
+                    <label for="soyad">Soyad</label>
+                    <input id="soyad" type="text" placeholder="Soyad" readonly="yes">
+                </div>
+                <div class="col-sm-12">
+                    <label  for="ad">Kullanıcı Adı</label>
+                    <input  type="kullanici" placeholder="Kullanıcı Adı" id="kullanici" readonly="yes">
+                </div>
+                <div class="col-sm-12">
+                    <label  for="mail">Mail Adresi</label>
+                    <input id="mail" type="email" placeholder="Mail Adresi" readonly="yes">
+                </div>
+                <div class="col-sm-12">
+                    <label for="sifre">Şifre</label>
+                    <input type="text" name="password" id="sifre" placeholder="Şifre" readonly="yes">
+                </div>
+               <div class="col-sm-12 buton">
+                <button type="submit" class="btn btn-lg">Çıkış Yap <i class="fa-solid fa-arrow-right-from-bracket"></i> </button>
+               </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/Profil/profil.js"></script>
+</html>

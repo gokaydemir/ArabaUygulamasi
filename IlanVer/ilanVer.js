@@ -45,7 +45,7 @@ function localStorageKaydet(e) {
     yili.value=''
     km.value=''
     vites.value=''
-    window.location.href = '/SatılıkAraclar/satılıkAraba.html';
+    window.location.href = '/Ilanlarım/ilanlarım.html';
     
     e.preventDefault()
     

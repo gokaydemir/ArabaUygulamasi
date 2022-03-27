@@ -12,11 +12,7 @@ form.addEventListener('submit', kaydol)
 function kaydol(e) {
     let kulaniciSonuc = yeniDizi[0].find((isim) => isim.mail === mail.value || isim.username === kullanicim.value)
     {
-        if (kulaniciSonuc) {
-            alert('Mail veya Kullanici Adı Kullanılmıştır')
-        } 
-    
-   if (!/^[a-zA-Z]*$/g.test(ad.value)) {
+  if (!/^[a-zA-Z]*$/g.test(ad.value)) {
         alert("Lütfen Sayi veya Türkçe Karakter Girmeyin")
     }
     else if (!/^[a-zA-Z]*$/g.test(soyad.value)) {
@@ -41,6 +37,9 @@ alert('ŞİFRE VE MAİL AYNI OLMASIN')
     else if (sifrem.value !== sifreTekrar.value) {
         alert('Şifreniz Aynı Olsun')
     }
+    else if (kulaniciSonuc) {
+        alert('Mail veya Kullanici Adı Kullanılmıştır')
+    } 
     else if (sifrem.value == sifreTekrar.value) {
         window.location.href = '/GirisYapmaForm/girisYap.html';
 

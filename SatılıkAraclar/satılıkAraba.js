@@ -79,10 +79,16 @@ function creatCard() {
             detail4.classList.add('card-detail-badge')
             overlay.appendChild(detail4)
             detail4.innerText=arabalar[0][i].carType
+
             const detail5=document.createElement('span')
             detail5.classList.add('card-detail-badge')
             overlay.appendChild(detail5)
             detail5.innerText=arabalar[0][i].carKm + ' KM'
+
+            const detail6=document.createElement('span')
+            detail6.classList.add('card-detail-badge')
+            overlay.appendChild(detail6)
+            detail6.innerText=arabalar[0][i].carModel
             
         
                 // Card Body

@@ -17,6 +17,7 @@ let fiyat=document.getElementById('fiyat')
 let profil=document.getElementById('profil')
 let km=document.getElementById('km')
 let vites=document.getElementById('vites')
+let model=document.getElementById('Model')
 
 const kullaniciBilgileri=[]
 kullaniciBilgileri.push(JSON.parse(localStorage.getItem('userInfo')))
@@ -27,7 +28,7 @@ profil.innerText=kullaniciBilgileri[0].kullaniciSonucu.name.toUpperCase()
 
 form.addEventListener('submit',localStorageKaydet)
 function localStorageKaydet(e) {
-    let satılıkAraba={carGear:vites.value,carKm:km.value,carName:arabaMarkası.value, carType:tipi.value, carYear:yili.value, carFuel:yakit.value, Price:fiyat.value,userName:kullaniciAdi.value }
+    let satılıkAraba={carModel:model.value,carGear:vites.value,carKm:km.value,carName:arabaMarkası.value, carType:tipi.value, carYear:yili.value, carFuel:yakit.value, Price:fiyat.value,userName:kullaniciAdi.value }
     let satılıkArabalar;
     if (localStorage.getItem('satilikAraba') === null) {
         satılıkArabalar = []
@@ -45,6 +46,7 @@ function localStorageKaydet(e) {
     yili.value=''
     km.value=''
     vites.value=''
+    model.value=''
     window.location.href = '/Ilanlarım/ilanlarım.html';
     
     e.preventDefault()
